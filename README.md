@@ -8,7 +8,11 @@ A simple utility for checking whether `jemalloc`(https://github.com/jemalloc/jem
 npm install jemalloc-check
 ```
 
-## Usage
+## API & Usage
+
+### `jemallocCheck()`
+
+Returns a promise that resolves to the file path of the stable version of jemalloc if it is available, or false if it is not available. The promise will resolve with false on Windows systems, as jemalloc is a Linux/Unix tool.
 
 ```js
 const { jemallocCheck } = require('jemalloc-check');
@@ -24,7 +28,13 @@ jemallocCheck().then((result) => {
 
 ## Command-line usage
 
-You can also use jemalloc-check as a command-line tool by installing it globally:
+You can run the checker with the following one liner:
+
+```bash
+> npx jemalloc-check
+```
+
+Or ou can also use jemalloc-check as a command-line tool by installing it globally:
 
 ```bash
 > npm install -g jemalloc-check
@@ -57,11 +67,6 @@ jemallocCheck().then((result) => {
 });
 ```
 
-## API
-
-### `jemallocCheck()`
-
-Returns a promise that resolves to the file path of the stable version of jemalloc if it is available, or false if it is not available. The promise will resolve with false on Windows systems, as jemalloc is a Linux/Unix tool.
 
 ## License
 
