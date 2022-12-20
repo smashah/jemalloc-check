@@ -1,0 +1,33 @@
+{
+  "name": "jemalloc-check",
+  "version": "1.0.0",
+  "description": "A simple Node.js package that checks if jemalloc is installed on the system.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smashah/jemalloc-check.git"
+  },
+  "bin": {
+    "jemalloc-check": "./bin/cli.js"
+  },
+  "keywords": [
+    "jemalloc",
+    "checker",
+    "CLI",
+    "memory",
+    "leak"
+  ],
+  "author": "SMASHAH <shah@idk.uno>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smashah/jemalloc-check/issues"
+  },
+  "homepage": "https://github.com/smashah/jemalloc-check#readme",
+  "devDependencies": {
+    "ava": "^5.1.0"
+  }
+}
