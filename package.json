@@ -29,5 +29,8 @@
   "homepage": "https://github.com/smashah/jemalloc-check#readme",
   "devDependencies": {
     "ava": "^5.1.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.4"
   }
 }
