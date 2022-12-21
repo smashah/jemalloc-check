@@ -11,7 +11,7 @@ export function jemallocCheck(): Promise<string | false> {
     log(`Running on platform: ${currentPlatform}`);
     if (currentPlatform === 'linux' || currentPlatform === 'darwin') {
       // Use the find command on Linux and macOS systems
-      command = 'find /usr/local/lib/ -maxdepth 2 -name "libjemalloc*.so*" 2>/dev/null';
+      command = 'find /usr/lib/ -maxdepth 2 -name "libjemalloc*.so*" 2>/dev/null';
       exec(command, (error, stdout) => {
         if (error) {
           log(`Command error: ${error}`);
