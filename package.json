@@ -1,6 +1,6 @@
 {
   "name": "jemalloc-check",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple Node.js package that checks if jemalloc is installed on the system.",
   "main": "./dist/index.js",
   "scripts": {
