@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/jemalloc-check)
 ![chatgpt](https://img.shields.io/badge/ChatGPT-Made%20with%20assistant-brightgreen)
 
-A simple utility for checking whether `jemalloc`(https://github.com/jemalloc/jemalloc) is installed on a system.
+A simple utility for checking whether [`jemalloc`](https://github.com/jemalloc/jemalloc) is installed on a system.
 
 ## Installation
 
