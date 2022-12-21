@@ -1,5 +1,7 @@
 # jemalloc-check
 
+![npm](https://img.shields.io/npm/v/jemalloc-check)
+
 A simple utility for checking whether `jemalloc`(https://github.com/jemalloc/jemalloc) is installed on a system.
 
 ## Installation
