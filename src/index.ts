@@ -20,7 +20,7 @@ export function jemallocCheck(): Promise<string | false> {
         // Check if the command produced any output
         if (stdout) {
           // Return the first line of the output (which should be the path to the jemalloc library)
-          resolve(stdout.split('\n').sort()[0]);
+          resolve(stdout.split('\n').filter(x=>x).sort()[0]);
         } else {
           // Return false if the command did not find the jemalloc library
           log('jemalloc library not found');
